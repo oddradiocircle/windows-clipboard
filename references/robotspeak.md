@@ -21,3 +21,6 @@ emocional universal. La teoría y el historial pertenecen a RobotSpeak.
 
 `copy.ps1 -Sound Off` o `copy.sh -Sound Off` desactiva el audio de esa copia.
 `-Sound On` lo habilita. No se cambia el volumen de Windows.
+
+Recepción: RCV + Neutral, Digital y Plain; puntos de 50 ms. La terminación
+descendente diferencia recibir de copiar. Ambas acciones admiten Sound Off.

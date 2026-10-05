@@ -35,6 +35,7 @@ Las tres herramientas de agente usan el mismo SKILL.md y los mismos scripts. El 
 
 ```powershell
 .\tests\clipboard.ps1
+.\tests\read.ps1
 ```
 
 La prueba realiza una copia, verifica Unicode y texto literal, y restaura el portapapeles anterior en memoria. Emite el sonido de confirmación.
@@ -43,3 +44,15 @@ MIT. Daniel Gómez / oddradiocircle. La licencia y revisión de RobotSpeak viaja
 
 El sonido elegido es OK electrónico (`Digital`), con articulación uniforme
 (`Plain`), punto de 50 ms y cierre Ready: «listo para usar».
+
+## Recibir del portapapeles
+
+«Lee lo que copié» o «el contenido está en mi portapapeles» activa la lectura.
+WSL usa `scripts/read.sh`; Windows PowerShell usa `scripts/read.ps1`. Ambos
+aceptan `-Sound On|Off` y `-Timbre`. El aviso **RCV** significa «recibido»: usa
+una terminación descendente para distinguirlo del OK ascendente de la copia.
+El sonido confirma la recepción, no la ejecución del contenido.
+
+La lectura devuelve una instantánea del texto UTF-8, sin añadir salto de línea
+ni sobrescribir el portapapeles. No hay vigilancia automática ni historial. Si
+no hay texto, falla sin sonido. Las advertencias van a stderr.

@@ -1,5 +1,5 @@
 interface:
   display_name: "Windows Clipboard"
-  short_description: "Copy exact text and play a RobotSpeak OK confirmation"
+  short_description: "Copy or receive clipboard text with distinct sound cues"
 policy:
   allow_implicit_invocation: true
