@@ -24,3 +24,5 @@ emocional universal. La teoría y el historial pertenecen a RobotSpeak.
 
 Recepción: RCV + Neutral, Digital y Plain; puntos de 50 ms. La terminación
 descendente diferencia recibir de copiar. Ambas acciones admiten Sound Off.
+
+Frases de estado para agentes (OK, ERR, K, RCV): [diccionario de RobotSpeak](https://github.com/oddradiocircle/robotspeak/blob/main/docs/dictionary.md).
